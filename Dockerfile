@@ -19,6 +19,7 @@ RUN apt-get update \
     ca-certificates \
     locales \
     git \
+    proxychains4 \
     && useradd -d /home/container -m container
 
 RUN locale-gen ru_RU.UTF-8
